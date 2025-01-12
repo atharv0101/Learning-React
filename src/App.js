@@ -1,4 +1,5 @@
 import "./App.css";
+// import Dictation from "./components/Dictation";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 function App() {
