@@ -43,7 +43,7 @@ export default function TextForm(props) {
 
     return (
       <div>
-        <h2>Speach To Text</h2>
+        <h2>Speech To Text</h2>
         <button className="btn btn-light my-1 mx-2" onClick={SpeechRecognition.startListening}>Start Speaking</button>
         <button className="btn btn-light my-1 mx-2" onClick={SpeechRecognition.stopListening}>Stop Speaking</button>
         <button className="btn btn-light my-1 mx-2" onClick={handleAppendTranscript}>Add Transcript</button>
