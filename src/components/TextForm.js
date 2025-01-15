@@ -38,7 +38,7 @@ export default function TextForm(props) {
     }
     const handleAppendTranscript = () => {
       setText((prevText) => prevText + " " + transcript);
-      resetTranscript(); // Clear the current transcript
+      resetTranscript(); 
     };
 
     return (
@@ -59,9 +59,10 @@ export default function TextForm(props) {
     <>
       <div className="mb-3">
         <h1>{props.heading}</h1>
-        <textarea
-          className="form-control" value={text} onChange={handleOnChange} id="myBox"rows="12"
-        ></textarea>
+        <textarea className="form-control" value={text}  onChange={handleOnChange} 
+        style= {props.mode === 'dark'? {backgroundColor: '#262626', color : 'white'} : {backgroundColor: 'white', color: 'black'}} 
+        id="myBox"rows="12">
+        </textarea>
         <button type="button" className="btn btn-light my-2 mx-2" onClick={handleUpClick}>Uppercase</button>
         <button type="button" className="btn btn-light my-2 mx-2" onClick={handleLowClick}>Lowercase</button>
         <button type="button" className="btn btn-secondary my-2 mx-2" onClick={handelSpecialChar}>Remove Special Characters</button>

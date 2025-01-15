@@ -1,7 +1,5 @@
-import React, {useState} from 'react'
-
-
-export default function About() {
+import React, {useState} from 'react';
+export default function About(props) {
 
   const [myStyle, setMyStyle] = useState({
     color : 'black',
